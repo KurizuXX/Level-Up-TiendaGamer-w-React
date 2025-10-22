@@ -1,3 +1,9 @@
+// ------------------------------------------------------------------
+// ------------------------------------------------------------------
+// ARREGLAR ESTE ARCHIVO/COMPONENTE
+// ------------------------------------------------------------------
+// ------------------------------------------------------------------
+
 import { useParams, useNavigate } from 'react-router-dom';
 import { getById } from '../data/products';
 import { STORAGE_KEYS, getStored, setStored } from '../utils/storage';

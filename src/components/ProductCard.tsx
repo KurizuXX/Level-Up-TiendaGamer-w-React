@@ -3,6 +3,12 @@ import { Link } from 'react-router-dom';
 import type { Product } from '../types';
 import '../styles/ProductCard.css';
 
+// ------------------------------------------------------------------
+// ------------------------------------------------------------------
+// ARREGLAR ESTE ARCHIVO/COMPONENTE
+// ------------------------------------------------------------------
+// ------------------------------------------------------------------
+
 interface ProductCardProps {
 	// Mantiene compatibilidad con las páginas actuales
 	p: Product;

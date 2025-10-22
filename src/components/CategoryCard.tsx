@@ -1,6 +1,12 @@
 import { Link } from 'react-router-dom';
 import type { Category } from '../types';
 
+// ------------------------------------------------------------------
+// ------------------------------------------------------------------
+// ARREGLAR ESTE ARCHIVO/COMPONENTE
+// ------------------------------------------------------------------
+// ------------------------------------------------------------------
+
 export default function CategoryCard({ c }: { c: Category }){
 return (
 <div className="col">

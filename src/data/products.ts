@@ -11,6 +11,7 @@ import imgLogitechG502 from '../assets/images/producto logitech g502 hero.jpg';
 import imgRazerGoliathus from '../assets/images/producto mousepad razer goliathus.jpg';
 import imgPolera from '../assets/images/producto polera.png';
 
+// Arreglar esto, es redundante con src/types/index.ts
 export const CATEGORIES: Category[] = [
     {id:'juegos', name:'Juegos de Mesa'},
     {id:'accesorios', name:'Accesorios'},

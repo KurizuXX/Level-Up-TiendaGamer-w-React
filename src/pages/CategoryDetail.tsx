@@ -1,3 +1,9 @@
+// ------------------------------------------------------------------
+// ------------------------------------------------------------------
+// ARREGLAR ESTE ARCHIVO/COMPONENTE
+// ------------------------------------------------------------------
+// ------------------------------------------------------------------
+
 import { useParams } from 'react-router-dom';
 import { getByCategory, CATEGORIES } from '../data/products';
 import ProductCard from '../components/ProductCard';

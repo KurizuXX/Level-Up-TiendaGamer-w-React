@@ -1,3 +1,9 @@
+// ------------------------------------------------------------------
+// ------------------------------------------------------------------
+// ARREGLAR ESTE ARCHIVO/COMPONENTE
+// ------------------------------------------------------------------
+// ------------------------------------------------------------------
+
 import { useState } from 'react';
 import type { ChangeEvent, FormEvent } from 'react';
 import { STORAGE_KEYS, getStored, setStored } from '../utils/storage';
