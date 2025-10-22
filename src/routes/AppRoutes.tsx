@@ -7,6 +7,7 @@ import NotFound from '../pages/NotFound';
 import Categories from '../pages/Categories';
 import CategoryDetail from '../pages/CategoryDetail';
 import ProductDetail from '../pages/ProductDetail';
+import Products from '../pages/Products';
 import Blogs from '../pages/Blogs';
 import BlogDetail1 from '../pages/BlogDetail1';
 import BlogDetail2 from '../pages/BlogDetail2';
@@ -29,6 +30,7 @@ function AppRoutes() {
         <Route path="categorias/:id" element={<CategoryDetail />} />
         
         {/* Productos */}
+  <Route path="productos" element={<Products />} />
         <Route path="productos/:id" element={<ProductDetail />} />
         
         {/* Ofertas */}

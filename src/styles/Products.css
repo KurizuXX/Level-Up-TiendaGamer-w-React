@@ -1,0 +1,56 @@
+/* Products Page Styles */
+:root {
+  --neon: #39FF14;
+  --bg-dark: #0d0d0d;
+  --panel: #1a1a1a;
+  --muted: #999;
+}
+
+.products-page {
+  background: var(--bg-dark);
+}
+
+.section-title {
+  color: #fff;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 64px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--neon), transparent);
+  border-radius: 2px;
+}
+
+.filter-bar .form-control,
+.filter-bar .form-select {
+  background-color: var(--panel);
+  color: #fff;
+  border: 1px solid #333;
+}
+
+.filter-bar .form-control::placeholder {
+  color: var(--muted);
+}
+
+/* Reveal animation grid */
+.reveal-grid {
+  --stagger: 60ms;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.reveal {
+  animation: fadeUp .6s ease both;
+}
+
+.fade-in {
+  animation: fadeUp .5s ease both;
+}
