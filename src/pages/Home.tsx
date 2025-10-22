@@ -96,13 +96,13 @@ function Home() {
               </div>
             </Link>
 
-            {/* Skates - Abajo extremo derecho */}
-            <Link to="/categorias/skates" className="category-card category-medium-bottom">
+            {/* Consolas - Abajo extremo derecho */}
+            <Link to="/categorias/consolas" className="category-card category-medium-bottom">
               <div className="category-label">
-                <h3>SKATES</h3>
+                <h3>CONSOLAS</h3>
               </div>
               <div className="category-image">
-                <img src={categoryImg1} alt="Skates" />
+                <img src={categoryImg1} alt="Consolas" />
               </div>
             </Link>
           </div>

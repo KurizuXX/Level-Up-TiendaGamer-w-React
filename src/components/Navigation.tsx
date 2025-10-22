@@ -4,7 +4,7 @@ import '../styles/Navigation.css';
 
 function Navigation() {
   return (
-    <Navbar expand="lg" className="custom-navbar">
+    <Navbar expand="lg" className="custom-navbar" fixed="top">
       <Container fluid className="px-4">
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

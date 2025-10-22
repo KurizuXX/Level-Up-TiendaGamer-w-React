@@ -4,4 +4,6 @@
 
 body {
   min-height: 100vh;
+  /* Compensar la altura del navbar fijo */
+  padding-top: 80px;
 }
