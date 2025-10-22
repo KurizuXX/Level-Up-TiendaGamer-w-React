@@ -1,10 +1,10 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import '../styles/Footer.css';
-import amexImg from '../assets/amex.png';
-import dinersImg from '../assets/diners-club.png';
-import mastercardImg from '../assets/mastercard.png';
-import visaImg from '../assets/visa.png';
+import amexImg from '../assets/images/amex.png';
+import dinersImg from '../assets/images/diners-club.png';
+import mastercardImg from '../assets/images/mastercard.png';
+import visaImg from '../assets/images/visa.png';
 
 function Footer() {
   return (
