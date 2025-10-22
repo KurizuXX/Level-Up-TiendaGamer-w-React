@@ -1,7 +1,15 @@
-export type CategoryId = 'consolas' | 'pc' | 'accesorios' | 'juegos';
-
+export type CategoryId =
+  | 'consolas'
+  | 'pc'
+  | 'accesorios'
+  | 'juegos'
+  | 'computadores'
+  | 'sillas'
+  | 'mouse'
+  | 'mousepad'
+  | 'poleras'
+  | 'polerones';
 export interface Category { id: CategoryId; name: string; }
-
 export interface Product {
   id: number;
   name: string;

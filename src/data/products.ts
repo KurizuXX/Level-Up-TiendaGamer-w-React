@@ -1,22 +1,100 @@
 import type { Category, Product, CategoryId } from '../types';
 
 export const CATEGORIES: Category[] = [
-  { id: 'consolas', name: 'Consolas' },
-  { id: 'pc', name: 'PC Gaming' },
-  { id: 'accesorios', name: 'Accesorios' },
-  { id: 'juegos', name: 'Juegos' }
+    {id:'juegos', name:'Juegos de Mesa'},
+    {id:'accesorios', name:'Accesorios'},
+    {id:'consolas', name:'Consolas'},
+    {id:'computadores', name:'PC Gamers'},
+    {id:'sillas', name:'Sillas Gamer'},
+    {id:'mouse', name:'Mouse'},
+    {id:'mousepad', name:'Mousepad'},
+    {id:'poleras', name:'Poleras Personalizadas'},
+    {id:'polerones', name:'Polerones Gamers Personalizados'}
 ];
 
 export const PRODUCTS: Product[] = [
-  { id: 1, name: 'Control Pro Neo', price: 59990, category: 'accesorios', img: 'https://picsum.photos/seed/neo/600/400', desc: 'Control inalámbrico RGB para sesiones pro.', featured: true, discount: 0.15 },
-  { id: 2, name: 'Auriculares Flux 7.1', price: 42990, category: 'accesorios', img: 'https://picsum.photos/seed/flux/600/400', desc: 'Sonido envolvente y micrófono retráctil.', featured: true },
-  { id: 3, name: 'RTX 5090 (Ficticia)', price: 1299990, category: 'pc', img: 'https://picsum.photos/seed/rtx/600/400', desc: 'Tarjeta gráfica para rendimiento extremo.', discount: 0.10 },
-  { id: 4, name: 'Consola Omega X', price: 499990, category: 'consolas', img: 'https://picsum.photos/seed/omega/600/400', desc: 'Nueva generación con ray tracing.', featured: true, discount: 0.20 },
-  { id: 5, name: 'Teclado Mecánico Void', price: 69990, category: 'accesorios', img: 'https://picsum.photos/seed/void/600/400', desc: 'Switches táctiles y luz neón.' },
-  { id: 6, name: 'Mouse Spectra', price: 34990, category: 'accesorios', img: 'https://picsum.photos/seed/spectra/600/400', desc: '8000 DPI con iluminación.', discount: 0.25 },
-  { id: 7, name: 'Game: CyberRift', price: 29990, category: 'juegos', img: 'https://picsum.photos/seed/cyber/600/400', desc: 'Aventura sci-fi de mundo abierto.' },
-  { id: 8, name: 'Game: NeoRacer', price: 25990, category: 'juegos', img: 'https://picsum.photos/seed/neoracer/600/400', desc: 'Carreras arcade con drift luminoso.' }
+    {
+        id: 1,
+        name: 'Catan',
+        price: 29990,
+        category: 'juegos',
+        img: 'assets/images/producto catan.jpg',
+        desc: 'Clásico de estrategia para 3-4 jugadores.'
+    },
+    {
+        id: 2,
+        name: 'Carcassonne',
+        price: 24990,
+        category: 'juegos',
+        img: 'assets/images/producto carcassonne.jpg',
+        desc: 'Colocación de losetas. 2-5 jugadores.'
+    },
+    {
+        id: 3,
+        name: 'Control Xbox Series X',
+        price: 59990,
+        category: 'accesorios',
+        img: 'assets/images/producto controlxbox.jpg',
+        desc: 'Ergonomía y botones mapeables.'
+    },
+    {
+        id: 4,
+        name: 'HyperX Cloud II',
+        price: 79990,
+        category: 'accesorios',
+        img: 'assets/images/producto hyperx cloud 2.jpg',
+        desc: 'Sonido envolvente con micrófono desmontable.'
+    },
+    {
+        id: 5,
+        name: 'PlayStation 5',
+        price: 549990,
+        category: 'consolas',
+        img: 'assets/images/producto playstation 5.png',
+        desc: 'Nueva generación de Sony.'
+    },
+    {
+        id: 6,
+        name: 'PC Gamer ASUS ROG Strix',
+        price: 1299990,
+        category: 'pc', 
+        img: 'assets/images/producto pc gamer asus.jpg',
+        desc: 'Rendimiento alto para juegos exigentes.'
+    },
+    {
+        id: 7,
+        name: 'Secretlab Titan',
+        price: 349990,
+        category: 'sillas',
+        img: 'assets/images/producto secretlab titan.jpg',
+        desc: 'Soporte ergonómico y ajustes finos.'
+    },
+    {
+        id: 8,
+        name: 'Logitech G502 HERO',
+        price: 49990,
+        category: 'mouse',
+        img: 'assets/images/producto logitech g502 hero.jpg',
+        desc: 'Sensor de alta precisión y botones programables.'
+    },
+    {
+        id: 9,
+        name: 'Razer Goliathus Extended Chroma',
+        price: 29990,
+        category: 'mousepad',
+        img: 'assets/images/producto mousepad razer goliathus.jpg',
+        desc: 'Superficie amplia con RGB.'
+    },
+    {
+        id: 10,
+        name: 'Polera Level-Up Personalizada',
+        price: 14990,
+        category: 'poleras',
+        img: 'assets/images/producto polera.png',
+        desc: 'Personaliza con tu gamer tag.'
+    }
 ];
+
 
 export function getById(id: string | number){
   return PRODUCTS.find(p => p.id === Number(id));
