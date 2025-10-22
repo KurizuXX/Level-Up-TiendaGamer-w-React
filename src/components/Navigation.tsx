@@ -38,8 +38,8 @@ function Navigation() {
             </NavDropdown>
 
             <NavDropdown title="NOSOTROS" id="nosotros-dropdown" className="nav-dropdown">
-              <NavDropdown.Item as={Link} to="/nosotros">Sobre nosotros</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/contacto">Contacto</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/about">Sobre nosotros</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/contact">Contacto</NavDropdown.Item>
             </NavDropdown>
 
             <div className="nav-icons d-flex ms-4">

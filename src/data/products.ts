@@ -1,4 +1,15 @@
 import type { Category, Product, CategoryId } from '../types';
+// Importar imágenes como módulos para que Vite las procese correctamente
+import imgCatan from '../assets/images/producto_catan.jpg';
+import imgCarcassonne from '../assets/images/producto carcassonne.jpg';
+import imgControlXbox from '../assets/images/producto controlxbox.jpg';
+import imgHyperx from '../assets/images/producto hyperx cloud 2.jpg';
+import imgPS5 from '../assets/images/producto playstation 5.png';
+import imgPcAsus from '../assets/images/producto pc gamer asus.jpg';
+import imgSecretlab from '../assets/images/producto secretlab titan.jpg';
+import imgLogitechG502 from '../assets/images/producto logitech g502 hero.jpg';
+import imgRazerGoliathus from '../assets/images/producto mousepad razer goliathus.jpg';
+import imgPolera from '../assets/images/producto polera.png';
 
 export const CATEGORIES: Category[] = [
     {id:'juegos', name:'Juegos de Mesa'},
@@ -18,7 +29,7 @@ export const PRODUCTS: Product[] = [
         name: 'Catan',
         price: 29990,
         category: 'juegos',
-        img: 'assets/images/producto catan.jpg',
+        img: imgCatan,
         desc: 'Clásico de estrategia para 3-4 jugadores.'
     },
     {
@@ -26,7 +37,7 @@ export const PRODUCTS: Product[] = [
         name: 'Carcassonne',
         price: 24990,
         category: 'juegos',
-        img: 'assets/images/producto carcassonne.jpg',
+        img: imgCarcassonne,
         desc: 'Colocación de losetas. 2-5 jugadores.'
     },
     {
@@ -34,7 +45,7 @@ export const PRODUCTS: Product[] = [
         name: 'Control Xbox Series X',
         price: 59990,
         category: 'accesorios',
-        img: 'assets/images/producto controlxbox.jpg',
+        img: imgControlXbox,
         desc: 'Ergonomía y botones mapeables.'
     },
     {
@@ -42,7 +53,7 @@ export const PRODUCTS: Product[] = [
         name: 'HyperX Cloud II',
         price: 79990,
         category: 'accesorios',
-        img: 'assets/images/producto hyperx cloud 2.jpg',
+        img: imgHyperx,
         desc: 'Sonido envolvente con micrófono desmontable.'
     },
     {
@@ -50,7 +61,7 @@ export const PRODUCTS: Product[] = [
         name: 'PlayStation 5',
         price: 549990,
         category: 'consolas',
-        img: 'assets/images/producto playstation 5.png',
+        img: imgPS5,
         desc: 'Nueva generación de Sony.'
     },
     {
@@ -58,7 +69,7 @@ export const PRODUCTS: Product[] = [
         name: 'PC Gamer ASUS ROG Strix',
         price: 1299990,
         category: 'pc', 
-        img: 'assets/images/producto pc gamer asus.jpg',
+        img: imgPcAsus,
         desc: 'Rendimiento alto para juegos exigentes.'
     },
     {
@@ -66,7 +77,7 @@ export const PRODUCTS: Product[] = [
         name: 'Secretlab Titan',
         price: 349990,
         category: 'sillas',
-        img: 'assets/images/producto secretlab titan.jpg',
+        img: imgSecretlab,
         desc: 'Soporte ergonómico y ajustes finos.'
     },
     {
@@ -74,7 +85,7 @@ export const PRODUCTS: Product[] = [
         name: 'Logitech G502 HERO',
         price: 49990,
         category: 'mouse',
-        img: 'assets/images/producto logitech g502 hero.jpg',
+        img: imgLogitechG502,
         desc: 'Sensor de alta precisión y botones programables.'
     },
     {
@@ -82,7 +93,7 @@ export const PRODUCTS: Product[] = [
         name: 'Razer Goliathus Extended Chroma',
         price: 29990,
         category: 'mousepad',
-        img: 'assets/images/producto mousepad razer goliathus.jpg',
+        img: imgRazerGoliathus,
         desc: 'Superficie amplia con RGB.'
     },
     {
@@ -90,7 +101,7 @@ export const PRODUCTS: Product[] = [
         name: 'Polera Level-Up Personalizada',
         price: 14990,
         category: 'poleras',
-        img: 'assets/images/producto polera.png',
+        img: imgPolera,
         desc: 'Personaliza con tu gamer tag.'
     }
 ];
